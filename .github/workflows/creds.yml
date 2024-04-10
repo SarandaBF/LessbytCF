@@ -1,4 +1,4 @@
-name: Example CDK Pipeline
+name: Cloudfoxable flag
 on:
   push:    
     branches: [ main ]
@@ -16,7 +16,7 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::730335471071:role/t_rodman
         aws-region: us-west-2
-    - name: Copy files to the test website with the AWS CLI
+    - name: Retrieve the secrets with the AWS CLI
       run: |
         aws --region us-west-2 ssm get-parameter --with-decryption --name trust-me
 
