@@ -14,7 +14,7 @@ jobs:
     - name: Configure AWS credentials from Test account
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        role-to-assume: arn:aws:iam::977300744170:role/t_rodman
+        role-to-assume: arn:aws:iam::730335471071:role/t_rodman
         aws-region: us-west-2
     - name: Copy files to the test website with the AWS CLI
       run: |
